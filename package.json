@@ -1,6 +1,6 @@
 {
   "name": "xrpl-hooks-api-assembly-script",
-  "version": "0.1.12-dev",
+  "version": "0.1.13",
   "description": "XRPL hooks API exports that you can import into your XRPL hooks project written in AssemblyScript.",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
     "asbuild:untouched": "asc assembly/index.ts --target debug",
     "asbuild:optimized": "asc assembly/index.ts --target release",
     "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
-    "clean": "rm -rf dist/main.ts",
-    "predist": "npm run clean && cp src/lib/xrpl-hooks-api.ts dist/dist/main.ts && cp README.md dist/",
+    "clean": "rm -rf dist/index.ts",
+    "predist": "npm run clean && cp src/lib/xrpl-hooks-api.ts dist/dist/index.ts && cp README.md dist/",
     "dist": "cd dist && npm publish"
   },
   "repository": {
