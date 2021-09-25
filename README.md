@@ -21,7 +21,7 @@ The contents of this lib are based on the headers he created that represent the 
 
    ```
    # From a terminal in the root of your project
-   npm -i xrpl-hooks-api-assembly-script -D
+   npm i xrpl-hooks-api-assembly-script -D
    ```
 
 1. import the declarations you want to use into your source code.
