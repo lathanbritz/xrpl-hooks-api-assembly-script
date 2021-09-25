@@ -28,7 +28,7 @@ The contents of this lib are based on the headers he created that represent the 
 
    ```
    # assembly/index.ts
-   import { _g as GUARD } from '../node_modules/xrpl-hooks-api-assembly-script/dist/'
+   import { _g as GUARD } from '../node_modules/xrpl-hooks-api-assembly-script/dist'
    ```
 
 1. Use the new declaration in your hook or cback functions.
