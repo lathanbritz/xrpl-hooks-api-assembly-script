@@ -44,9 +44,7 @@ The contents of this lib are based on the headers he created that represent the 
 
 ## Contribute
 
-If you want to help out simply fork this repo, make your changes, and submit a PR.
-
-Once your branch is merged to master a new release will be cut and a distribution will be pushed to npmjs.com.
+If you want to help out simply fork this repo and submit a PR.
 
 ## Contact
 
