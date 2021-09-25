@@ -1,0 +1,36 @@
+{
+  "name": "xrpl-hooks-api-assembly-script",
+  "version": "0.1.0",
+  "description": "XRPL hooks API exports that you can import into your XRPL hooks project written in AssemblyScript.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run asbuild",
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfgrissom/xrpl-hooks-api-assembly-script.git"
+  },
+  "keywords": [
+    "xrpl",
+    "hooks",
+    "assemblyscript"
+  ],
+  "author": "Jay Grissom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfgrissom/xrpl-hooks-api-assembly-script/issues"
+  },
+  "homepage": "https://github.com/jfgrissom/xrpl-hooks-api-assembly-script#readme",
+  "dependencies": {
+    "@assemblyscript/loader": "^0.19.16"
+  },
+  "devDependencies": {
+    "as-bind": "^0.8.2",
+    "assemblyscript": "^0.19.16",
+    "node-fetch-commonjs": "^3.0.0"
+  }
+}
