@@ -13,5 +13,5 @@
 @external('env', '_g')
 export declare function _g(id: i32, maxiter: i32): void
 
-// @external('env', 'trace')
-//export declare function trace(mread_prt: u32, mread_len: u32, dread_prt: u32, dread_len: u32, as_hex: u32): i64 
+@external('env', 'trace')
+export declare function trace(mread_prt: u32, mread_len: u32, dread_prt: u32, dread_len: u32, as_hex: u32): i64 
