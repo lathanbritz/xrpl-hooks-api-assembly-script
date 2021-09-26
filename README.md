@@ -2,6 +2,8 @@
 
 XRPL hooks API exports that you can import into your hooks project written in AssemblyScript.
 
+While this is currently working, please understand this repo is currently a work in progress. It's likely to be broken for versions prior to 1.0.0. Thanks for your patience. Contact info below if you're having trouble.
+
 ## Background
 
 This was created based on the work done by <a href="https://github.com/XRPL-Labs/xrpld-hooks/commits?author=RichardAH" target="_blank">RichardAH</a>. He has done some great work for XRPL hooks in C and I wanted to try writing my XRPL Hooks in AssemblyScript.
@@ -43,6 +45,20 @@ Of course the folks at <a href="https://xrpl-labs.com/" target="_blank">XRPL-Lab
       return 42
    }
    ```
+
+## Compiler Options
+
+In the scripts section of your `package.json` using these compiler options are currently working when importing this declarations.
+
+```
+"scripts": {
+    ...
+    "asbuild:untouched": "asc assembly/index.ts --target debug -O3 --noAssert --runtime minimal -b build/untouched.wasm -t build/untouched.wat -d build/untouched.d.ts",
+    "asbuild:optimized": "asc assembly/index.ts --target release  -O3 --noAssert --runtime minimal -b build/optimized.wasm -t build/optimized.wat -d build/optimized.d.ts",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
+    ...
+  }
+```
 
 ## Contribute
 
