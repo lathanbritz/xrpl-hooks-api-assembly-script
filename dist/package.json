@@ -1,6 +1,6 @@
 {
   "name": "xrpl-hooks-api-assembly-script",
-  "version": "0.1.15",
+  "version": "0.2.0",
   "description": "XRPL hooks API exports that you can import into your XRPL hooks project written in AssemblyScript.",
   "main": "dist/index.ts",
   "repository": {
