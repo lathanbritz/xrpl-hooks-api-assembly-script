@@ -8,8 +8,13 @@
   See https://xrpl-hooks.readme.io/docs/compiling-hooks for details.
 */
 
-import { _g as GUARD } from '../src/lib/xrpl-hooks-api'
+import { _g as GUARD, trace as TRACE } from '../src/lib/xrpl-hooks-api'
 
 export const runGuard = (): void => {
   GUARD(1, 1)
+}
+
+export const traceString = (): void => {
+  const message = 'test'
+  TRACE(message, message.length, message, message.length, 0)
 }

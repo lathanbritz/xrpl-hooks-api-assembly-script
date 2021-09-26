@@ -8,6 +8,8 @@ This was created based on the work done by <a href="https://github.com/XRPL-Labs
 
 The contents of this lib are based on the headers he created that represent the <a href="https://github.com/XRPL-Labs/xrpld-hooks/blob/hooks-chaining/hook-api-examples/hookapi.h" target="_blank">XRPL Hooks API</a>.
 
+Of course the folks at <a href="https://xrpl-labs.com/" target="_blank">XRPL-Labs</a> an many other developers in the #XrpCommunity were a super help too!
+
 ## XRPL Hooks Docs
 
 - <a href="https://github.com/XRPL-Hackathon-2021/hooks-liquidity-pool/blob/master/README.md" target="_blank">Getting setup to use hooks in your local development environment</a>.
@@ -47,6 +49,8 @@ The contents of this lib are based on the headers he created that represent the 
 If you want to help out simply fork this repo, make your changes, and submit a PR.
 
 Once your branch is merged to master a new release will be cut and a distribution will be pushed to npmjs.com.
+
+If you just want to share what you found without a PR hit me up on Twitter.
 
 ## Contact
 

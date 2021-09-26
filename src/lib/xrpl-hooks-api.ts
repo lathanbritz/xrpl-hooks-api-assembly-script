@@ -1,17 +1,29 @@
 /*
   Understanding what is happening here:
-  @export decorator: The XRPL will export functions that your hook can consume and use (like _g).
+  @external decorator: The XRPL will export functions that your hook 
+  can consume and use (like _g).
   
-  declare: The declaration of each function here creates the contract between your code 
-  and the compiler that essentially says, "I promise the XRPL will provide 
-  this function at runtime so don't thrown a compiler error."
+  declare: The declaration of each function here creates the contract 
+  between your code and the compiler that essentially says, "I promise
+  the XRPL will provide this function at runtime so don't throw a 
+  compiler error."
 
-  export: The export of these declarations make it possible for you to use 
-  these in your hooks without needing to write each of them yourself.
+  export: The export of these declarations make it possible for you to 
+  use these in your hooks without needing to write each of them yourself.
 */
 
 @external('env', '_g')
-export declare function _g(id: i32, maxiter: i32): void
+export declare function _g(
+  id: i32,
+  maxiter: i32
+): void
 
+// https://xrpl-hooks.readme.io/reference/trace
 @external('env', 'trace')
-export declare function trace(mread_prt: u32, mread_len: u32, dread_prt: u32, dread_len: u32, as_hex: u32): i64 
+export declare function trace(
+  mread_prt: string,
+  mread_len: u32,
+  dread_prt: string,
+  dread_len: u32,
+  as_hex: u32
+): i64 
