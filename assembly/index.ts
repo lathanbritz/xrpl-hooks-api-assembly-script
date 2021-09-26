@@ -15,6 +15,6 @@ export const runGuard = (): void => {
 }
 
 export const traceString = (): void => {
-  const message = 'test'
+  const message = 'testing'
   TRACE(message, message.length, message, message.length, 0)
 }
