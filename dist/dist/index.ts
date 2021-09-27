@@ -21,9 +21,9 @@ export declare function _g(
 // https://xrpl-hooks.readme.io/reference/trace
 @external('env', 'trace')
 export declare function trace(
-  mread_prt: string,
+  mread_prt: string | null,
   mread_len: u32,
-  dread_prt: string,
+  dread_prt: string | null,
   dread_len: u32,
   as_hex: u32
 ): i64 
