@@ -48,7 +48,7 @@ Of course the folks at <a href="https://xrpl-labs.com/" target="_blank">XRPL-Lab
 
 ## Compiler Options
 
-In the scripts section of your `package.json` using these compiler options are currently working when importing this declarations.
+In the scripts section of your `package.json` using these compiler options are currently working when importing these declarations.
 
 ```
 "scripts": {
