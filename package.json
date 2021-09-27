@@ -15,7 +15,7 @@
     "copy:src": "cp src/lib/xrpl-hooks-api.ts dist/dist/index.ts",
     "copy:package": "cp dist-package.json dist/package.json",
     "predist": "npm run clean && npm run copy:src && npm run copy:readme && npm run copy:config && npm run copy:package",
-    "dist": "cd dist && npm --version //publish"
+    "dist": "cd dist && npm publish"
   },
   "repository": {
     "type": "git",
